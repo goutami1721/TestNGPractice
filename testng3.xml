@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name=" Smoke Test">
+	  <groups>
+		  <run>
+			  <include name="smoke"/>
+		  </run>
+	  </groups>
+	  <classes>
+	 <class name="TestngDemo.Demo1"/>
+      <class name="TestngDemo.Demo2"/>
+    <class name="TestngDemo.Demo3"/>
+    <class name="TestngDemo.Demo4"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
