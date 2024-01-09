@@ -1,5 +1,7 @@
 package TestngDemo;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -27,6 +29,12 @@ public class Demo1 {
 	public void Homeloan()
 	{
 		System.out.println("This is for Homeloan");
+	}
+	@Test(groups= {"paralleldemo"})
+	public void openweb1()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
 	}
 	@Test(groups={"smoke"})
 	public void Carloanregister()

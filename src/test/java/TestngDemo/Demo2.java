@@ -1,5 +1,7 @@
 package TestngDemo;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -27,6 +29,13 @@ public class Demo2 {
 	public void mobileloan()
 	{
 		System.out.println("This is for mobile loan");
+	}
+	@Test(groups={"paralleldemo"})
+	public void openweb2()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		
 	}
 	@AfterMethod
 	public void demomethodlast()
